@@ -1,17 +1,16 @@
 .header {
-    position: absolute;
-    width: 100%;
     height: auto;
-    top: 0;
+
     background-color: $color-grey;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     &_contacts {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
         .logo {
-            display: inline-block;
-            width: 20%;
-            padding: 0 5rem;
-        
+            width: 10%;
 
             .logos_title {
                 font-size: 20px;
@@ -20,9 +19,8 @@
         }
 
         .header_search {
-            display: inline-block;
             position: relative;
-            width: 40%;
+            width: 50%;
             padding: 1.5rem;
 
             input::placeholder {
@@ -31,8 +29,6 @@
             }
 
             .search {
-                position: relative;
-                display: inline-block;
                 width: 100%;
                 height: 52px;
                 
@@ -71,35 +67,27 @@
         }
 
         .header_contact {
-            display: inline-block;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             width: 20%;
-            padding-top: 10px;
 
             .header_call {
-                position: relative;
-                // display: inline-block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 32px;
                 height: 32px;
                 border-radius: 50%;
                 background-color: $color-green;
-                // margin: 0 10px 0 20px;
-                float: left;
-                margin-right: 1rem;
 
                 img {
-                    position: absolute;
-
                     width: 16px;
                     height: 16px;
-                    top: 50%;
-                    left: 50%;
-
-                    transform: translate(-50%, -50%);
                 }
             }
 
             .header_number {
-                display: inline-block;
 
                 .contacts {
                     font-weight: 400;
@@ -121,11 +109,10 @@
         }
 
         .header_basket {
-            display: inline-block;
-            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
 
-            position: relative;
-            top: 20px;
             width: 149px;
             height: 52px;
 
@@ -133,41 +120,31 @@
             border-radius: 10px;
 
             .basket_text {
-                position: absolute;
-                // display: inline-block;
-                top: 8px;
-                left: 24px;
+                padding-right: 1rem;
 
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 17px;
                 color: $color-white;
-                padding: 10px 20px 10px 0;
                 border-right: 1px solid rgba(255, 255, 255, 0.3);
             }
 
             .basket_number {
-                position: absolute;
-                // display: inline-block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
                 width: 24px;
                 height: 24px;
-                left: 114px;
-                top: 13px;
 
                 border-radius: 50%;
                 background: $color-white;
                 
-                .number {
-                    margin-top: 5px;
-                    // padding-left: 50%;
-                    font-weight: 600;
-                    font-size: 12px;
-                    line-height: 14px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 14px;
 
-                    color: $color-grey;
-                    text-align: center;
-                    vertical-align: middle;
-                }
+                color: $color-grey;
             }
         }
     }
@@ -214,25 +191,22 @@
     }
 
     .header_navigation {
-        padding-top: 29px;
-        height: 78px;
 
         .navigation {  
 
             &_lists {
-                width: 100%;
-                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
         
                 .navigation_list {
-                    display: inline-block;
-                    text-decoration: none;
+                    list-style-type: none;
 
                     &:hover {
                         border-bottom: 2px solid $color-green;
                     } 
 
                     .navigation_link {
-                        padding: 0 12px 0 12px;
                         color: $color-white;
                         text-decoration: none;
 

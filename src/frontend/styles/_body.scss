@@ -2,7 +2,6 @@
     position: absolute;
     width: 100%;
     height: auto;
-    top: 751px;
     background-color: $color-grey;
 
     .cold {
@@ -16,11 +15,13 @@
         }
 
         &_products {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
 
             .product {
-            display: inline-block;
-            margin: 2rem 1rem;
-
+            padding: 1rem;
+            margin-bottom: 2rem;
             width: 22%;
             height: 385px;
             border-radius: 10px;
@@ -28,7 +29,8 @@
             background: linear-gradient(90deg, #494544 0%, $color-bluegrey 100%);
 
                 &_img {
-
+                    margin: -1rem;
+                    margin-bottom: 1rem;
                     img {
                     width: 100%;
                     height: 227px;
@@ -37,70 +39,62 @@
                     }
                 }
 
-                &_title {
-                    margin: 10px;
-                    color: $color-white;
-                    font-size: 22px;
-                    font-weight: 700;
+                &_header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-                    float: left;
-                }
+                    .product_title {
+                        color: $color-white;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
 
-                &_mass {
-                    margin: 20px 10px 10px 10px;
-                    color: $color-white;
-                    font-size: 12px;
-                    font-weight: 400;
-
-                    float: right;
-                }
-
-                .clear {
-                    clear: both;
+                    .product_mass {
+                        color: $color-white;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
                 }
 
                 &_text {
-                    margin-left: 10px;
                     color: $color-white;
                     font-size: 13px;
                     font-weight: 400;
                 }
 
-                &_price {
-                    margin: 20px 10px;
-                    color: $color-white;
-                    font-size: 20px;
-                    font-weight: 600;
+                &_footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 1rem;
 
-                    float: left;
-                }
-
-                .button {
-                    position: relative;
-                    margin: 10px;
-                    width: 137px;
-                    height: 44px;
-                    background-color: $color-green;
-                    border-radius: 10px;
-                    border: $color-green;
-
-                    float: right;
-
-                    p {
-                        position: absolute;
+                    .price {
                         color: $color-white;
-                        font-size: 14px;
+                        font-size: 20px;
                         font-weight: 600;
-                        top: 0;
-                        left: 19px;
                     }
 
-                    img {
-                        position: absolute;
-                        width: 18px;
-                        height: 18px;
-                        top: 13px;
-                        right: 12px;
+                    .button {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 137px;
+                        height: 44px;
+                        background-color: $color-green;
+                        border-radius: 10px;
+                        border: $color-green;
+
+                        p {
+                            color: $color-white;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            width: 18px;
+                            height: 18px;
+                        }
                     }
                 }
             }
@@ -118,11 +112,13 @@
         }
 
         &_products {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
 
             .product {
-            display: inline-block;
-            margin: 2rem 1rem;
-
+            padding: 1rem;
+            margin-bottom: 2rem;
             width: 22%;
             height: 385px;
             border-radius: 10px;
@@ -130,7 +126,8 @@
             background: linear-gradient(90deg, #494544 0%, $color-bluegrey 100%);
 
                 &_img {
-
+                    margin: -1rem;
+                    margin-bottom: 1rem;
                     img {
                     width: 100%;
                     height: 227px;
@@ -139,70 +136,62 @@
                     }
                 }
 
-                &_title {
-                    margin: 10px;
-                    color: $color-white;
-                    font-size: 22px;
-                    font-weight: 700;
+                &_header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-                    float: left;
-                }
+                    .product_title {
+                        color: $color-white;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
 
-                &_mass {
-                    margin: 20px 10px 10px 10px;
-                    color: $color-white;
-                    font-size: 12px;
-                    font-weight: 400;
-
-                    float: right;
-                }
-
-                .clear {
-                    clear: both;
+                    .product_mass {
+                        color: $color-white;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
                 }
 
                 &_text {
-                    margin-left: 10px;
                     color: $color-white;
                     font-size: 13px;
                     font-weight: 400;
                 }
 
-                &_price {
-                    margin: 20px 10px;
-                    color: $color-white;
-                    font-size: 20px;
-                    font-weight: 600;
+                &_footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 1rem;
 
-                    float: left;
-                }
-
-                .button {
-                    position: relative;
-                    margin: 10px;
-                    width: 137px;
-                    height: 44px;
-                    background-color: $color-green;
-                    border-radius: 10px;
-                    border: $color-green;
-
-                    float: right;
-
-                    p {
-                        position: absolute;
+                    .price {
                         color: $color-white;
-                        font-size: 14px;
+                        font-size: 20px;
                         font-weight: 600;
-                        top: 0;
-                        left: 19px;
                     }
 
-                    img {
-                        position: absolute;
-                        width: 18px;
-                        height: 18px;
-                        top: 13px;
-                        right: 12px;
+                    .button {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 137px;
+                        height: 44px;
+                        background-color: $color-green;
+                        border-radius: 10px;
+                        border: $color-green;
+
+                        p {
+                            color: $color-white;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            width: 18px;
+                            height: 18px;
+                        }
                     }
                 }
             }
@@ -219,11 +208,13 @@
         }
 
         &_products {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
 
             .product {
-            display: inline-block;
-            margin: 2rem 1rem;
-
+            padding: 1rem;
+            margin-bottom: 2rem;
             width: 22%;
             height: 385px;
             border-radius: 10px;
@@ -231,7 +222,8 @@
             background: linear-gradient(90deg, #494544 0%, $color-bluegrey 100%);
 
                 &_img {
-
+                    margin: -1rem;
+                    margin-bottom: 1rem;
                     img {
                     width: 100%;
                     height: 227px;
@@ -240,70 +232,62 @@
                     }
                 }
 
-                &_title {
-                    margin: 10px;
-                    color: $color-white;
-                    font-size: 22px;
-                    font-weight: 700;
+                &_header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-                    float: left;
-                }
+                    .product_title {
+                        color: $color-white;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
 
-                &_mass {
-                    margin: 20px 10px 10px 10px;
-                    color: $color-white;
-                    font-size: 12px;
-                    font-weight: 400;
-
-                    float: right;
-                }
-
-                .clear {
-                    clear: both;
+                    .product_mass {
+                        color: $color-white;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
                 }
 
                 &_text {
-                    margin-left: 10px;
                     color: $color-white;
                     font-size: 13px;
                     font-weight: 400;
                 }
 
-                &_price {
-                    margin: 20px 10px;
-                    color: $color-white;
-                    font-size: 20px;
-                    font-weight: 600;
+                &_footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 1rem;
 
-                    float: left;
-                }
-
-                .button {
-                    position: relative;
-                    margin: 10px;
-                    width: 137px;
-                    height: 44px;
-                    background-color: $color-green;
-                    border-radius: 10px;
-                    border: $color-green;
-
-                    float: right;
-
-                    p {
-                        position: absolute;
+                    .price {
                         color: $color-white;
-                        font-size: 14px;
+                        font-size: 20px;
                         font-weight: 600;
-                        top: 0;
-                        left: 19px;
                     }
 
-                    img {
-                        position: absolute;
-                        width: 18px;
-                        height: 18px;
-                        top: 13px;
-                        right: 12px;
+                    .button {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 137px;
+                        height: 44px;
+                        background-color: $color-green;
+                        border-radius: 10px;
+                        border: $color-green;
+
+                        p {
+                            color: $color-white;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            width: 18px;
+                            height: 18px;
+                        }
                     }
                 }
             }
@@ -311,18 +295,19 @@
     }
 
     .cafe {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         max-width: 1200px;
         height: 610px;
-        // margin-right: 0;
         float: right;
         background-image: url(../img/MaskGroup2.jpg);
         background-size: cover;
         background-repeat: no-repeat;
 
         &_description {
-            width: 55%;
+            width: 60%;
             padding: 60px 50px;
-            float: left;
 
             h1 {
                 color: $color-white;
@@ -349,20 +334,20 @@
         }
 
         &_cards {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
             width: 40%;
-            margin: 60px auto;
-            float: right;
 
             .card1 {
-                display: inline-block;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
                 width: 227px;
                 height: 227px;
                 background-color: rgba(80, 75, 74, 0.9);
-                text-align: center;
-
-                img {
-                   margin-top: 30%; 
-                }
 
                 h6 {
                     color: $color-white;
@@ -373,16 +358,15 @@
             }
 
             .card2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+
                 width: 227px;
                 height: 227px;
                 background-color: rgba(80, 75, 74, 0.9);
-                float: right;
-                text-align: center;
 
-                img {
-                    margin-top: 30%; 
-                }
- 
                 h6 {
                     color: $color-green;
                     font-size: 18px;
@@ -392,16 +376,16 @@
             }
 
             .card3 {
-                display: inline-block;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+
+                margin-top: 1rem;
                 width: 227px;
                 height: 227px;
                 background-color: rgba(80, 75, 74, 0.9);
-                text-align: center;
 
-                img {
-                    margin-top: 30%; 
-                }
- 
                 h6 {
                     color: $color-white;
                     font-size: 18px;
@@ -411,15 +395,15 @@
             }
 
             .card4 {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: center;
+
+                margin-top: 1rem;
                 width: 227px;
                 height: 227px;
                 background-color: rgba(80, 75, 74, 0.9);
-                float: right;
-                text-align: center;
-
-                img {
-                    margin-top: 30%; 
-                }
  
                 h6 {
                     color: $color-white;
